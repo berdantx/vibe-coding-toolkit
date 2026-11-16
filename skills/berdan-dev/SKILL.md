@@ -1,5 +1,5 @@
 ---
-name: pre-projeto-app
+name: berdan-dev
 description: Usar ANTES de começar qualquer aplicativo, sistema, SaaS, painel ou automação com código. Entrevista a pessoa, classifica risco e gera spec, checklist de segurança e plano em fases para o Claude Code, integrado ao vibe-coding-toolkit.
 ---
 
@@ -17,7 +17,7 @@ Nunca prometer sistema "sem erro". O compromisso é: pegar o máximo de erros an
 
 ## Quem faz o quê: esta skill e o Superpowers
 
-- **pre-projeto-app** roda **uma vez**, no início do projeto. Produz spec, segurança e plano de fases.
+- **berdan-dev** roda **uma vez**, no início do projeto. Produz spec, segurança e plano de fases.
 - **Superpowers** (brainstorm → plano → implementação → revisão) roda **a cada funcionalidade**, dentro das fases do plano. Ele não refaz a entrevista do projeto: parte da `docs/SPEC.md` já aprovada e só esclarece o que for específico daquela funcionalidade.
 
 Se o Superpowers não estiver instalado, usar o prompt portátil [brainstorm até plano](https://github.com/berdantx/vibe-coding-toolkit/blob/main/docs/prompts/04-brainstorm-to-plan.md) com a mesma disciplina.
