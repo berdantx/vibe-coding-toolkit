@@ -9,7 +9,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Feito para Claude Code](https://img.shields.io/badge/feito%20para-Claude%20Code-CC785C.svg)](https://docs.claude.com/en/docs/claude-code)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/soumatheusgomes/vibe-coding-toolkit/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/berdantx/vibe-coding-toolkit/pulls)
 [![Feito no Brasil](https://img.shields.io/badge/feito%20no-Brasil%20%F0%9F%87%A7%F0%9F%87%B7-009c3b.svg)](https://instagram.com/matheusgomes)
 
 </div>
@@ -114,6 +114,7 @@ Não existe um único jeito "certo" de percorrer este repositório — depende d
 - **Quer o setup completo, do zero?** Vá direto pro [Playbook](docs/02-playbook-onboarding.md) — é o caminho guiado, passo a passo, terminando com um projeto real rodando o fluxo inteiro.
 - **Já conhece o fluxo e só quer consultar uma ferramenta específica?** [`docs/tools/`](docs/tools/) é a referência — cada arquivo é autocontido, sem depender de você ter lido os outros antes.
 - **Só quer copiar um prompt pronto e adaptar pro seu caso?** [`docs/prompts/`](docs/prompts/) tem templates prontos pra colar e ajustar — sanitização de projeto, burndown de lint, code review multi-agente, e mais.
+- **Vai começar um app ou sistema do zero?** Rode antes a skill [`pre-projeto-app`](skills/pre-projeto-app/SKILL.md) — ela entrevista quem pediu, classifica o risco e gera spec, checklist de segurança e plano em fases, já amarrados ao fluxo deste toolkit.
 - **Quer só os arquivos de configuração pra colar no seu projeto?** [`templates/`](templates/) tem o `CLAUDE.md.template`, um `settings.json.example` de hooks, e a regra de ondas paralelas pronta pra copiar.
 
 Um detalhe de idioma, pra não confundir: este README e toda a explicação dentro de `docs/` (o "como", o "por quê", os tutoriais) estão em português — pra você, que me acompanha por aqui, entender tudo sem esforço. A única parte que fica em inglês de propósito são os blocos de prompt prontos pra colar em `docs/prompts/` (o texto que você copia e cola direto num agente de IA) — isso funciona melhor em inglês, universalmente, independente do idioma de quem está lendo a explicação ao redor. Onde um conceito é específico do Claude Code (plugins, hooks, skills), o doc deixa isso explícito — boa parte do resto funciona igual no Codex ou em qualquer outro agente que leia um arquivo de instruções e execute comandos.
@@ -149,6 +150,12 @@ Um detalhe de idioma, pra não confundir: este README e toda a explicação dent
 | [Anthropic Skills](docs/tools/13-anthropics-skills.md) | O repositório oficial da Anthropic com as Skills de referência — geração real de `docx`/`pdf`/`pptx`/`xlsx`, e duas skills "meta" que ensinam a criar suas próprias skills e servidores MCP. Um dos repositórios de IA mais estrelados do GitHub inteiro. |
 | [Chrome DevTools MCP](docs/tools/14-chrome-devtools-mcp.md) | Servidor MCP oficial do time do Chrome — dá ao agente acesso a uma sessão real do navegador pra diagnosticar performance, rede e console ao vivo. Complementa o agent-browser: um automatiza um fluxo, o outro investiga o que está acontecendo nele. |
 
+### 🧩 Skills
+
+| Skill | Descrição |
+|---|---|
+| [pre-projeto-app](skills/pre-projeto-app/SKILL.md) | Roda antes de qualquer linha de código: entrevista guiada (modo técnico ou modo leigo, pra cliente), classificação de risco em 3 níveis, e geração de `docs/SPEC.md`, `docs/SEGURANCA.md`, `docs/PLANO.md` e `CLAUDE.md`. Stack padrão Next.js + Supabase + Vercel. Pra instalar: `mkdir -p ~/.claude/skills && cp -r skills/pre-projeto-app ~/.claude/skills/` (ou em `.claude/skills/` dentro de um projeto). |
+
 ### 📋 Prompts prontos
 
 | Doc | Descrição |
@@ -174,6 +181,7 @@ Um detalhe de idioma, pra não confundir: este README e toda a explicação dent
 
 Esse toolkit não nasceu do zero. Ele empacota, documenta e amarra num fluxo só o trabalho de outras pessoas — vale a pena conhecer os projetos originais:
 
+- **Vibe Coding Toolkit (original)** — Matheus Gomes ([@matheusgomes](https://instagram.com/matheusgomes)). Este repositório é um fork mantido por [berdantx](https://github.com/berdantx), com a skill `pre-projeto-app` adicionada.
 - **[Superpowers](https://github.com/anthropics/claude-plugins-official)** — Anthropic
 - **[Ponytail](https://github.com/DietrichGebert/ponytail)** — Dietrich Gebert
 - **[Caveman](https://github.com/JuliusBrussee/caveman)** — Julius Brussee
@@ -191,7 +199,7 @@ Este projeto está sob licença [MIT](LICENSE) — use, copie, adapte, redistrib
 
 ## <a id="vamos-juntos"></a>👋 Vamos juntos
 
-Se esse fluxo te ajudou, valeu passar por aqui — e se você quer mais dicas de prompt e IA no dia a dia, [me segue no Instagram](https://instagram.com/matheusgomes) ([@matheusgomes](https://instagram.com/matheusgomes)). Contribuições, issues e PRs são bem-vindos — abre um lá no [GitHub](https://github.com/soumatheusgomes/vibe-coding-toolkit).
+Se esse fluxo te ajudou, valeu passar por aqui — e se você quer mais dicas de prompt e IA no dia a dia, [me segue no Instagram](https://instagram.com/matheusgomes) ([@matheusgomes](https://instagram.com/matheusgomes)). Contribuições, issues e PRs são bem-vindos — abre um lá no [GitHub](https://github.com/berdantx/vibe-coding-toolkit).
 
 <div align="center">
 

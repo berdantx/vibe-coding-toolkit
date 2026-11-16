@@ -7,7 +7,7 @@ com exemplo em cada etapa, veja o
 > Comandos e nomes de marketplace verificados em **15 de agosto de 2026**. Esse
 > ecossistema muda em semanas, não em anos — se algum comando abaixo não bater
 > com o que seu agente realmente executa, [abra uma
-> issue](https://github.com/soumatheusgomes/vibe-coding-toolkit/issues) em vez
+> issue](https://github.com/berdantx/vibe-coding-toolkit/issues) em vez
 > de assumir que o erro é seu.
 
 ## 1. Claude Code
